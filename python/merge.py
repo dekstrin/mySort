@@ -1,6 +1,6 @@
-import time
+from time import time
 
-start_time = time.time()
+start_time = time()
 string = '254235432356120'
 
 def merge(left, right):
@@ -30,4 +30,4 @@ def mergeSort(string):
     return merge(left, right)
 
 print "Result:" + mergeSort(string)
-print("--- %s seconds ---" % (time.time() - start_time))
+print("--- %s seconds ---" % (time() - start_time))
